@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700;800&display=swap');
+
+/* INICIO CONFIG GERAL */
+
+:root {
+
+  --primary-color: #00240F;
+  --secondary-color: #EC0000;
+  --details-color: #05A84B;
+  --black: #000;
+  --white: #fff;
+
+  --primary-font: 'Fira Sans', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  font-size: 16px;
+  background-color: var(--white);
+  max-width: 1024px;
+  min-height: 100vh;
+  margin: 0 auto;
+  border-radius: 3.4rem;
+  box-shadow: 0px 0px 30px -4px rgba(0, 0, 0, 0.30);
+  padding: 0 3rem;
+}
+
+h1 {
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-size: 3.5rem;
+  color: var(--black);
+}
+
+h2 {
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 2rem;
+  color: var(--black);
+}
+
+h3,
+caption {
+  font-family: var(--secondary-font);
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--black);
+}
+
+h4 {
+  font-family: var(--secondary-font);
+  font-weight: 600;
+  font-size: 1.3;
+  color: var(--black);
+}
+
+a {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--primary-color);
+}
+
+p {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: var(--primary-color);
+}
+
+i {
+  font-size: 1.2rem;
+  color: var(--details-color);
+}
+
+/* FINAL CONFIG GERAL */
+
+/* INICIO HEADER CONFIG */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+a:hover,
+i:hover {
+  color: var(--secondary-color);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* FIM HEADER CONFIG */
+
+/* INICIO BOTAO CONFIG */
+
+button,
+.button {
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--white);
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 1.6rem;
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover,
+.button:hover {
+  color: var(--white);
+  box-shadow: 0 0 20px var(--secondary-color);
+}
+
+/* FIM BOTAO CONFIG */
+
+/* INICIO HERO/MAIN CONFIG */
+
+hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  padding: 0.8rem 1.8rem;
+  width: 11.5rem;
+}
+
+.hero__right {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hero__left img {
+  width: 549px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+section {
+  display: flex;
+  gap: 0 2.5rem;
+}
+
+.main__itens {
+  width: 290px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  padding: 1.4rem 1.8rem;
+  border-radius: 12rem 12rem 2rem 2rem;
+  box-shadow: 0px 0px 30px -4px rgba(0, 0, 0, 0.30);
+}
+
+.main__itens img {
+  width: 200px;
+}
+
+/* FIM HERO/MAIN CONFIG */
+
+/* INICIO DA CONFIG DA TABELA */
+
+#tabela {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#tabela table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  border: 1px solid var(--secondary-color);
+}
+
+#tabela caption {
+  font-size: 1.5em;
+  border-radius: 1.5rem 1.5rem 0 0;
+  background-color: var(--secondary-color);
+  color: var(--white);
+  padding: 10px;
+}
+
+#tabela th {
+  background-color: var(--secondary-color);
+  color: var(--white);
+  padding: 10px;
+}
+
+#tabela td {
+  color: var(--details-color);
+  font-weight: 600;
+  background-color: var(--white);
+  padding: 8px;
+  border: 1px solid var(--secondary-color);
+}
+
+/* FIM DA CONFIG DA TABELA */
+
+/* INICIO DA CONFIG DA FOOTER */
+
+footer {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.footer__github {
+  font-weight: 600;
+  color: var(--details-color);
+}
+
+/* FIM DA CONFIG DA FOOTER */

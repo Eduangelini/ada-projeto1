@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700;800&display=swap');
+
+/* INICIO CONFIG GERAL */
+
+:root {
+
+  --primary-color: #00240F;
+  --secondary-color: #EC0000;
+  --details-color: #05A84B;
+  --black: #000;
+  --white: #fff;
+
+  --primary-font: 'Fira Sans', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  font-size: 16px;
+  background-color: var(--white);
+  max-width: 1024px;
+  min-height: 100vh;
+  margin: 0 auto;
+  border-radius: 3.4rem;
+  box-shadow: 0px 0px 30px -4px rgba(0, 0, 0, 0.30);
+  padding: 0 3rem;
+}
+
+h1 {
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-size: 3.5rem;
+  color: var(--black);
+}
+
+h2 {
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 2rem;
+  color: var(--black);
+}
+
+h3 {
+  font-family: var(--secondary-font);
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--black);
+}
+
+h4 {
+  font-family: var(--secondary-font);
+  font-weight: 600;
+  font-size: 1.3;
+  color: var(--black);
+}
+
+a {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--primary-color);
+}
+
+p {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: var(--primary-color);
+}
+
+i {
+  font-size: 1.2rem;
+  color: var(--details-color);
+}
+
+/* FINAL CONFIG GERAL */
+
+/* INICIO HEADER CONFIG */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+a:hover,
+i:hover {
+  color: var(--secondary-color);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* FIM HEADER CONFIG */
+
+/* INICIO BOTAO CONFIG */
+
+button,
+.button {
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--white);
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 1.6rem;
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover,
+.button:hover {
+  color: var(--white);
+  box-shadow: 0 0 20px var(--secondary-color);
+}
+
+/* FIM BOTAO CONFIG */
+
+/* INICIO MAIN CONFIG */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  gap: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+label {
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+input,
+textarea {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--primary-color);
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--details-color);
+  border-radius: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border: 2px solid var(--details-color);
+
+}
+
+/* FIM MAIN CONFIG */
+
+/* INICIO DA CONFIG DA FOOTER */
+
+footer {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.footer__github {
+  font-weight: 600;
+  color: var(--details-color);
+}
+
+/* FIM DA CONFIG DA FOOTER */
