@@ -87,6 +87,10 @@ i {
 
 /* INICIO HEADER CONFIG */
 
+.header__resp {
+  visibility: hidden;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -246,13 +250,15 @@ footer {
 
 @media (max-width: 768px) {
 
-  header {
+  /* NÃO CONSEGUI FAZER A RESPONSIVIDADE DO HEADER, CONSEGUI SOMENTE PENSAR SOMENTE NESSA SOLUÇAO */
+
+  .header__header {
+    visibility: hidden;
     flex-direction: column;
   }
 
-  nav {
-    visibility: hidden;
-    align-items: center;
+  .header__resp {
+    visibility: visible;
   }
 
   hero {
@@ -264,12 +270,8 @@ footer {
     order: 1;
   }
 
-  .nav__navigation {
-    visibility: hidden;
-  }
-
   body {
-    padding: 0 1rem;
+    padding: 0 0.5rem;
   }
 
   section {

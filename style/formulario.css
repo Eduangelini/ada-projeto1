@@ -93,6 +93,10 @@ header {
   padding: 1.5rem 0;
 }
 
+.header__resp {
+  visibility: hidden;
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -145,7 +149,7 @@ main {
 form {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
 }
 
 label {
@@ -190,3 +194,53 @@ footer {
 }
 
 /* FIM DA CONFIG DA FOOTER */
+
+/* INICIO DA RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+
+  .header__header {
+    visibility: hidden;
+    flex-direction: column;
+  }
+
+  .header__resp {
+    visibility: visible;
+  }
+
+  hero {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  body {
+    padding: 0 1rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  label {
+    text-align: left;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+  }
+}
+
+/* FIM DA RESPONSIVIDADE */
