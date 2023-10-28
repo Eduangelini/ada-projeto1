@@ -149,11 +149,12 @@ button {
 .hero__right {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 2rem;
 }
 
 .hero__left img {
-  width: 549px;
+  max-width: 100%;
 }
 
 main {
@@ -165,11 +166,14 @@ main {
 
 section {
   display: flex;
-  gap: 0 2.5rem;
+  flex-wrap: wrap;
+  /* Faz os itens ficarem em linha */
+  gap: 2.5rem;
 }
 
 .main__itens {
-  width: 290px;
+  width: 100%;
+  max-width: 280px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -189,8 +193,8 @@ section {
 /* INICIO DA CONFIG DA TABELA */
 
 #tabela {
-  width: 50%;
-  margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
 }
 
 #tabela table {
@@ -237,3 +241,61 @@ footer {
 }
 
 /* FIM DA CONFIG DA FOOTER */
+
+/* INICIO DA RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+  }
+
+  nav {
+    visibility: hidden;
+    align-items: center;
+  }
+
+  hero {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .hero__right {
+    order: 1;
+  }
+
+  .nav__navigation {
+    visibility: hidden;
+  }
+
+  body {
+    padding: 0 1rem;
+  }
+
+  section {
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3,
+  caption {
+    font-size: 1.2rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  main {
+    gap: 2rem;
+  }
+}
+
+/* FIM DA RESPONSIVIDADE */
